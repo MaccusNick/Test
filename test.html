@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clothes</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+	<div class="container">
+		<div class="headsection">
+			<div class="bar">
+				<ul>
+					<li><a href="#">My Cart</a></li>
+				</ul>
+			</div>
+		</div>
+			
+			<div class="leftsection">
+				<img src="classic-tee.jpg">
+			</div>
+			<div class="middlesection"></div>
+			<div class="rightsection">
+
+				<div class="name">
+					<p>Classic Tee</p>
+					
+				</div>
+				<hr/>
+				<div class="price">
+					<p><b>$75.00</b></p>
+					
+				</div>
+				<hr/>
+
+
+
+				<div class="description">
+					
+					
+					<p>
+						Praesent dignissim viverra est, sed bibendum ligula congue non. Sed ac nislet felis gravida commodo? Suspendisseeget ullamcorper ipusm. 
+						Praesent dignissim viverra est, sed bibendum ligula congue non. Sed ac nislet felis gravida commodo? Suspendisseeget ullamcorper ipusm. 
+					</p>
+				</div>
+
+				<div class="size">
+					<label class="active">
+						<input type="radio" checked=true name="parent_radio" value="S"/>S
+					</label>
+					
+					<label>
+						<input type="radio" checked=true name="parent_radio" value="M"/>M
+					</label>
+
+					<label>
+						<input type="radio" checked=true name="parent_radio" value="L"/>L
+					</label>
+					
+				</div>
+
+				<div class="btn">
+					<input type="button" name="ADD" value="ADD TO CART">
+				</div>
+				
+			</div>
+			
+	
+		
+	</div>
+
+	<script type="text/javascript">
+
+	var demandStr = $('input:radio:checked').val()
+  	console.log(demandStr)
+ 		 $(".size label").click(function () {
+         var index = $(this).index();
+         $(".size label").removeClass("active"), 
+        $(".size label").eq(index).addClass("active")
+        })
+
+ 		  $(".size input").click(function () {
+      var index = $(this).index();
+      demand_str = $('input:radio:checked').val(); 
+      console.log(demandStr)
+})
+		
+
+	</script>
+
+	
+</body>
+</html>
